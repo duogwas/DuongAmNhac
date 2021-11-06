@@ -65,6 +65,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_chonbai:
                 Intent intent = new Intent(this, ChonBaiHatActivity.class);
                 intent.putExtra("idPlayingNow", getSongPlayingNow().getId());
+                if (mediaPlayer != null && mediaPlayer.isPlaying())
+                    mediaPlayer.stop();
                 startActivity(intent);
                 break;
 
