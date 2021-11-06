@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChonBaiHatActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Bài số"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_idSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/tv_idSelect"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:text="1"
+        android:onClick="idSongSelect"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/tv_idSelect"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@id/btn1"
+        android:onClick="idSongSelect"
+        android:text="2"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/tv_idSelect"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@id/btn2"
+        android:onClick="idSongSelect"
+        android:text="3"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="190dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/btn1"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:onClick="idSongSelect"
+        android:text="4"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/btn1"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/btn4"
+        android:onClick="idSongSelect"
+        android:text="5"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="190dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/btn4"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="10dp"
+        android:text="6"
+        android:onClick="idSongSelect"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnChon"
+        android:layout_width="290dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/btn6"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:onClick="transferIdSongSelect"
+        android:text="chọn"
+        android:textSize="25sp" />
+
+</RelativeLayout>
